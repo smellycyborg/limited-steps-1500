@@ -162,6 +162,7 @@ local function playerAdded(player)
 
     print("Connections:  ", Sdk._connections, "  Data:  ", Sdk._playerData)
 
+	-- Todo add conditions for task.spawn()
     while task.wait() do
         -- checks to see if layer i still in game and if not will break loop
         local playerExist = Sdk._playerData[player]
